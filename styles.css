@@ -1,0 +1,310 @@
+* {
+  margin: 0%;
+  padding: 0;
+}
+
+body {
+  background-image: url(./assets/header_img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 72vh;
+}
+
+.date {
+  color: #fff;
+}
+
+header h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 24vh;
+}
+
+#name h1 {
+  color: white;
+  position: relative;
+  top: 21vh;
+  text-align: center;
+}
+
+#about h1 {
+  position: relative;
+  top: 73vh;
+}
+
+#about p {
+  position: relative;
+  top: 73vh;
+  /* border: 2px solid; */
+  width: 60%;
+  text-align: justify;
+  left: 22%;
+  height: 20vh;
+}
+
+#skills {
+  width: 100%;
+  height: 65vh;
+
+  position: relative;
+  top: 75vh;
+}
+
+#indicator1,
+#indicator2,
+#indicator3,
+#indicator4,
+#indicator5,
+#indicator6 {
+  border: 2px solid;
+  color: #dad0d0;
+  height: 7vh;
+  width: 22%;
+  background-color: #abb2b2;
+  border-radius: 252px;
+}
+
+.indicator {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position: relative;
+  top: 18vh;
+}
+
+#indicator5,
+#indicator6 {
+  position: relative;
+  top: 6vh;
+}
+
+#skill1,
+#skill2,
+#skill3,
+#skill4,
+#skill5,
+#skill6 {
+  /* border: 2px solid; */
+  height: 7vh;
+  border-radius: 253px;
+  width: 73%;
+  position: relative;
+  left: 0%;
+  padding: 0%;
+  background-color: aqua;
+}
+
+#skill2 {
+  background-color: blueviolet;
+}
+
+#skill3 {
+  background-color: chartreuse;
+}
+
+#skill4 {
+  background-color: coral;
+}
+
+#skill5 {
+  background-color: cornflowerblue;
+}
+
+#skill6 {
+  background-color: deeppink;
+}
+
+#skill1 p,
+#skill2 p,
+#skill3 p,
+#skill4 p,
+#skill5 p,
+#skill6 p {
+  color: white;
+  /* left: 2%; */
+  position: relative;
+  left: 11%;
+  font-weight: bold;
+  top: 2vh;
+}
+
+#eductaion {
+  /* border: 2px solid;*/
+  height: 107vh;
+  position: relative;
+  top: 78vh;
+  width: 68%;
+  left: 17%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.boxes {
+
+  height: 23vh;
+  width: 23%;
+  position: relative;
+  left: 6%;
+}
+
+.boxes:nth-child(2n) {
+
+  left: 73vh;
+
+
+}
+
+#extra-curricular {
+  /* border: 2px solid;*/
+  height: 107vh;
+  position: relative;
+  top: 85vh;
+  width: 68%;
+  left: 17%;
+
+}
+
+#projects {
+
+  height: 46vh;
+  position: relative;
+  top: 93vh;
+}
+
+.project_ {
+  display: flex;
+}
+
+.project_ img {
+  width: 92%;
+}
+
+#edu-head,
+#extra-curri-head {
+  text-align: center;
+}
+
+#divider {
+  border: 2px solid black;
+  transform: rotate(90deg);
+  position: relative;
+  top: 47vh;
+  height: 1%;
+  left: 10%;
+  width: 68%;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+footer {
+  background-color: blueviolet;
+  height: 84vh;
+  position: relative;
+  top: 82vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#contact {
+  text-align: center;
+  position: relative;
+  left: 45%;
+}
+
+#program-img img {
+  width: 49%;
+}
+
+#edu-img img {
+  width: 20%;
+}
+
+header img {
+  width: 10%;
+  height: 117px;
+  border-radius: 58px;
+  position: relative;
+  top: 55vh;
+  left: 45%;
+}
+
+#college-name,
+#program {
+  color: #1e1eae;
+  font-weight: bold;
+  font-size: 3.5vh;
+}
+
+#cgpa,
+#month {
+  color: orange;
+  font-weight: bold;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #343a40;
+  border-radius: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  ;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  float: left;
+  color: rgb(198, 193, 193);
+  text-align: center;
+  font-size: 16px;
+  padding: 0.8rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav .btn {
+  margin-left: 2px;
+  float: right;
+  font-size: 16px;
+  color: #17a2b8;
+  background-color: transparent;
+  padding: 6px 12px;
+  border: 1px solid #17a2b8;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.nav input[type=text] {
+  float: right;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 12px 4px 0px;
+  width: 200px;
+  outline: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #17a2b8;
+  color: aliceblue;
+}

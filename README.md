@@ -16,3 +16,7 @@
 - BOOTSTRAP
 - FONT AWESOME
 - YOU CAN ADDED EXTERNAL IMAGES
+
+
+
+Note: One issue can be assigned to one only person at a time (First come, First Serve). 

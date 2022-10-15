@@ -146,7 +146,6 @@ header h1 {
 }
 
 .boxes {
-
   height: 23vh;
   width: 23%;
   position: relative;
@@ -154,10 +153,7 @@ header h1 {
 }
 
 .boxes:nth-child(2n) {
-
   left: 73vh;
-
-
 }
 
 #extra-curricular {
@@ -167,11 +163,9 @@ header h1 {
   top: 85vh;
   width: 68%;
   left: 17%;
-
 }
 
 #projects {
-
   height: 46vh;
   position: relative;
   top: 93vh;
@@ -211,7 +205,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 #contact {
   text-align: center;
@@ -255,8 +248,9 @@ header img {
   overflow: hidden;
   background-color: #343a40;
   border-radius: 2px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  ;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   padding: 0.4rem 0.8rem;
   display: flex;
   align-items: center;
@@ -289,7 +283,7 @@ header img {
   padding: 0.5rem 1rem;
 }
 
-.nav input[type=text] {
+.nav input[type="text"] {
   float: right;
   padding: 8px;
   border: none;
@@ -307,4 +301,61 @@ header img {
 .btn:hover {
   background-color: #17a2b8;
   color: aliceblue;
+}
+
+.back-to-top--btn {
+  top: 80%;
+  left: 90%;
+
+  /* font-size: 6rem; */
+  background: none;
+  border: none;
+  background: rgba(255, 166, 0, 0.543);
+
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  padding: 0.6rem;
+  z-index: 11;
+
+  position: fixed;
+
+  cursor: pointer;
+
+  /* margin-left: 90%; */
+  /* margin-top: 40%; */
+  /* left: 100%; */
+
+  transition-duration: 400ms;
+
+  /* -moz-box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.356);
+  -webkit-box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.329);
+  box-shadow: 10px 10px 9px rgba(10, 10, 10, 0.336); */
+
+  transform: translateY(20rem);
+  visibility: hidden;
+
+  animation: pulse 1500ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: rgba(255, 166, 0, 0.494) 0 0 0 0;
+  }
+  100% {
+    box-shadow: rgba(255, 166, 0, 0) 0 0 5px 16px;
+  }
+}
+
+.back-to-top--btn:active {
+  background: rgba(255, 166, 0, 0.686);
+  transform: scale(0.9);
+
+  /* -moz-box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.356);
+  -webkit-box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.329);
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.336); */
+}
+
+.back-to-top--btn[data-visible="true"] {
+  visibility: visible;
+  transform: translateY(0rem);
 }

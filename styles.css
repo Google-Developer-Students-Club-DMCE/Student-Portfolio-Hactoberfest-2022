@@ -303,6 +303,10 @@ header img {
   color: aliceblue;
 }
 
+.main-content {
+  background-image: linear-gradient(180deg, grey, black);
+}
+
 .back-to-top--btn {
   top: 80%;
   left: 90%;

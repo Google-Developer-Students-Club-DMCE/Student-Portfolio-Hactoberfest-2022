@@ -308,3 +308,9 @@ header img {
   background-color: #17a2b8;
   color: aliceblue;
 }
+
+
+
+.main-content {
+  background-image: linear-gradient(180deg, grey, black);
+}

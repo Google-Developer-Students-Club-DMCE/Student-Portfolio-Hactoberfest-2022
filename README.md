@@ -8,3 +8,11 @@
 - Fix the issue.
 - Generate a Pull Request.
 - Wait for your PR to get merged.
+
+# Technologies to be used:
+- HTML
+- CSS
+- JS
+- BOOTSTRAP
+- FONT AWESOME
+- YOU CAN ADDED EXTERNAL IMAGES

@@ -15,3 +15,11 @@ backToTopBtn.addEventListener("click", () =>
   window.scrollTo({ top: 0, behavior: "smooth" })
 );
 
+var months = 
+['January','February','March','April','May','June','July',
+'August','September','October','November','December'];       
+var tomorrow = new Date();
+/* tomorrow.setTime(tomorrow.getTime() + (1000*3600*24)); */       
+document.getElementById("spanDate").innerHTML = 
+tomorrow.getDate() + " " + months[tomorrow.getMonth()]+ " " + 
+tomorrow.getFullYear();

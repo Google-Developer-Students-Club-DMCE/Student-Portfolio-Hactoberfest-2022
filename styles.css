@@ -248,7 +248,7 @@ footer {
   width: auto;
   position: relative;
   top: 82vh;
-  display: block;
+  display: flex;
   flex-wrap: wrap;
 }
 

@@ -179,6 +179,12 @@ header h1 {
   width: 92%;
 }
 
+.certificates{
+  position:relative;
+  top: 550px;
+  margin-bottom: 80px;
+}
+
 #edu-head,
 #extra-curri-head {
   text-align: center;

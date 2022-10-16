@@ -8,7 +8,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 72vh;
 }
-
+h1{
+  padding-left: 20px;
+}
 .date {
   color: #fff;
 }
@@ -139,6 +141,8 @@ header h1 {
 
 .box {
   display: flex;
+  height: auto;
+  width: auto;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -165,23 +169,64 @@ header h1 {
   left: 17%;
 }
 
+#projects h1{
+  padding-left: 20px;
+}
 #projects {
-  height: 46vh;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
   position: relative;
+  display: block;
+  width:auto;
   top: 93vh;
 }
 
-.project_ {
-  display: flex;
+.project-box {
+  margin: 20px;
+  padding: 20px;
 }
 
+.project_{ 
+  width: 80vw; 
+  height: auto; 
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .project_ img {
   width: 92%;
+}
+
+@media screen and (max-width: 768px){
+  .project-box {
+    margin: 6px;
+    padding: 10px;
+  }
+  #projects h1{
+    margin-bottom: 20px;
+  }
+  .project_ img {
+    width: 30vw;
+  }
+  .project_{ 
+    width: 80vw; 
+    height: auto; 
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+  }
 }
 
 #edu-head,
 #extra-curri-head {
   text-align: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 #divider {
@@ -199,10 +244,11 @@ header h1 {
 
 footer {
   background-color: blueviolet;
-  height: 84vh;
+  min-height: 300px;
+  width: auto;
   position: relative;
   top: 82vh;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
 }
 

@@ -1,5 +1,4 @@
 # Student-Portfolio-Hactoberfest-2022
-# Student-Portfolio-Hactoberfest-2022
 
 
 # Table of contents

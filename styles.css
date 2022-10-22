@@ -285,13 +285,61 @@ p {
   border-right: none;
 }
 
+
 footer {
-  background-color: blueviolet;
-  min-height: 300px;
-  width: auto;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  background-color: #1a1c1e;
+  padding: 70px 0px;
+}
+
+footer .primary-button {
+  margin-bottom: 30px;
+}
+
+footer ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0px 4px;
+}
+
+footer ul li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  background-color: #a78d0b;
+  color: #282b2f;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 17px;
+}
+
+footer ul li a:hover {
+  color: #282b2f;
+  background-color: #ff8e43;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 15px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-bottom: 0px;
+}
+
+footer em {
+  color: #ff8e43;
+  font-weight: 600;
+  font-style: normal;
 }
 
 #contact {

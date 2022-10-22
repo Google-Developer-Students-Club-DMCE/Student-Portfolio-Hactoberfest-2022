@@ -84,9 +84,3 @@ git push origin branch-name
 * __Star this repository__ if you had fun!
   
 Note: One issue can be assigned to one only person at a time (First come, First Serve). 
-
-
-
-
-
-

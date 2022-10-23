@@ -34,6 +34,9 @@ header h1 {
 #about h1 {
   position: relative;
   top: 73vh;
+  font-family: Verdana;
+  border-bottom:2px solid coral;
+  margin-bottom:30px;
 }
 
 #about p {
@@ -44,6 +47,15 @@ header h1 {
   text-align: justify;
   left: 22%;
   height: 20vh;
+  font-family: Arvo;
+}
+
+#about p:first-letter {
+  font-size: 100px;
+  display: block;
+  float: left;
+  line-height: 0.5;
+  margin: 15px 15px 10px 0;
 }
 
 #skills {

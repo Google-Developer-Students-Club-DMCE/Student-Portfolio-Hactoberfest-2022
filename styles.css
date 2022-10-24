@@ -7,8 +7,13 @@ body {
   background-image: url(./assets/header_img.jpg);
   background-repeat: no-repeat;
   background-size: 100% 72vh;
+
+
 }
 
+html{
+  width: 100%;
+}
 h1 {
   padding-left: 20px;
 }
@@ -55,6 +60,7 @@ header h1 {
   display: flex;
   justify-content: center;
   gap: 200px;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -396,8 +402,9 @@ header img {
 }
 
 .back-to-top--btn {
-  top: 80%;
-  left: 90%;
+  position: absolute;
+  top: 80px;
+  left: 90px;
 
   /* font-size: 6rem; */
   background: none;
@@ -631,7 +638,39 @@ header img {
   position: relative;
   margin-top: 8rem;
   width: 100%;
+  flex-wrap: wrap;
 }
+
+ @media (max-width:770px) {
+  .main-content{
+    flex-direction: column;
+  }
+  .left{
+    display: block;
+    padding: 2px;
+    font-size: 60%;
+  }
+  .right-box{
+    display: block;
+    width: 100%;
+    margin: 1rem;
+  }
+  .right-box input{
+    width: 80%;
+    margin: 0;
+  }
+
+  .socialhandles{
+    margin-top: 10rem;
+    width: 100% !important;
+    justify-content: space-between;
+    /* margin: 0; */
+    height: 10vh;
+    margin-left: -10rem;
+
+
+  }
+ }
 .left{
   position: absolute;
   top: -150px;
@@ -667,14 +706,17 @@ header img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  margin-right: 200px;
+  justify-content: space-around;
+  width: 50%;
+
+  /* margin-right: 200px; */
 }
 .socialhandles{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   color: white;
+  width: 50%;
 }
 .socialhandles h2{
   transform: rotate(270deg);
@@ -706,10 +748,11 @@ header img {
 }
 .footer{
   width: 100% !important;
+
 }
 .socialhandles i{
   font-size: 30px;
-  margin: 0px 20px;
+  /* margin: 0px 20px; */
 }
 .socialhandles i:hover{
   background: white;
@@ -719,24 +762,24 @@ header img {
   color: #1e1eae;
   padding: 5px;
   transform: scale(1.1);
-  transition: 2;
+  transition: 1s ;
 }
 .fa-instagram:hover{
   color: #fd79a8;
   padding: 5px;
   transform: scale(1.1);
-  transition: 2;
+  transition: 1s ;
 }
 .fa-twitter:hover{
   color: #74b9ff;
   padding: 5px;
   transform: scale(1.1);
-  transition: 2;
+  transition: 1s ;
 }
 
 .fa-youtube:hover{
   color: #d63031;
   padding: 5px;
   transform: scale(1.1);
-  transition: 2;
+  transition: 1s ;
 }

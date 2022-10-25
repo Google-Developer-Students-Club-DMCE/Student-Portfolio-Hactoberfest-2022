@@ -783,3 +783,9 @@ header img {
   transform: scale(1.1);
   transition: 1s ;
 }
+.fa-github:hover{
+  color: #333;
+  padding: 5px;
+  transform: scale(1.1);
+  transition: 1s ;
+}

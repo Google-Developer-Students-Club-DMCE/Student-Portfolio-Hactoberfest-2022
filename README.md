@@ -41,7 +41,7 @@ Personal portfolio websites provide a brief information about the professional b
 
 ##	Software Requirement
 
-•	Vistual Studio Code 
+•	[Visual Studio Code](https://code.visualstudio.com/Download)
   
 • Tech Stacks :
 - HTML

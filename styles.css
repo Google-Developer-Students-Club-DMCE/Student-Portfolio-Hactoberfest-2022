@@ -673,7 +673,7 @@ header img {
  }
 .left{
   position: absolute;
-  top: -150px;
+  top: -178px;
   left: 20%;
   display: flex;
   flex-wrap: wrap;
@@ -691,6 +691,8 @@ header img {
 }
 .left-box{
   text-align: center;
+  position: relative;
+  left: -11%;
 }
 .img-profile{
   width: 5rem;

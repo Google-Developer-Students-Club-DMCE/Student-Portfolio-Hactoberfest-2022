@@ -785,3 +785,8 @@ header img {
   transform: scale(1.1);
   transition: 1s ;
 }
+.modal-body p {
+    color: #1e1eae;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

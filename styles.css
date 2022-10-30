@@ -39,6 +39,7 @@ header h1 {
 #about h1 {
   position: relative;
   top: 73vh;
+  text-align: center;
 }
 
 #about p {
@@ -46,7 +47,7 @@ header h1 {
   top: 73vh;
   /* border: 2px solid; */
   width: 60%;
-  text-align: justify;
+  text-align: center;
   left: 22%;
   height: 20vh;
 }
@@ -62,6 +63,7 @@ header h1 {
 #skills {
   position: relative;
   top: 73vh;
+  text-align: center;
 }
 
 #skill_block {

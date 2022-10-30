@@ -14,6 +14,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -40,7 +41,7 @@
         trigger="loop"
         delay="1000"
         colors="primary:#000000"
-        style="width: 70px; height: 70px"
+        style="width: 54px; height: 54px"
       >
       </lord-icon>
     </button>
@@ -82,9 +83,27 @@
       </div>
     </div>
     </nav>
- 
     <!-- Navigation Bar Ends -->
+  <!--IMAGE CAROUSEL-->
+  <section>
+<div class="carousel" data-carousel>
+    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+    <button class="carousel-button next" data-carousel-button="next" >&#8658;</button>
+    <ul data-slides>
+        <li class="slide" data-active="">
+    <img src="assets\img1.png" alt="1" width="75%" hight="15%">
+     </li>
 
+     <li class="slide">
+        <img src="assets\img2.png" alt=" 2" width="75%" hight="15%">
+         </li>
+
+         <li class="slide">
+            <img src="assets\header_img.jpg" alt="nature 3" width="75%" hight="15%">
+             </li>
+    </ul>
+</div>
+   </section> 
     <div id="about">
       <h1>About</h1>
       <p>
@@ -290,10 +309,7 @@
           </div>
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id
-              interdum mi. Fusce sollicitudin elementum risus, a consequat diam
-              rutrum vitae. Nunc porta nulla ut condimentum placerat. Donec et
-              tortor non enim fermentum consectetur.
+               I aim to upskill myself in Frontend developement by learning Javascript and by gaining a wider knowledge towards it. After that I would focus on Backend Part by learning the most exciting and popular tech stack that is MERN stack and would love to gain knowlegde and make myself capable enough to become a full stack web developer.
             </p>
           </div>
         </div>
@@ -333,7 +349,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <p>Message Sent Successfully! </p>
+              <p>Thanks for contacting Us!! We will surely get back to you </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

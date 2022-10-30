@@ -4,16 +4,76 @@
 }
 
 body {
-  background-image: url(./assets/header_img.jpg);
+  
   background-repeat: no-repeat;
   background-size: 100% 72vh;
 
 
 }
 
+.carousel
+{
+    width:100w;
+    height:100vh;
+    position:relative;
+}
+
+.slide
+{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    transition: 200ms opacity ease-in-out;
+     transition-delay: 200ms;
+}
+
+.slide > img{
+    display:block;
+    width:100%;
+    height:90%;
+    object-fit: cover;
+    object-position: center;
+}
+.slide[data-active]
+{
+    opacity:1;
+    z-index: 1;
+    transition-delay: 0ms;
+    
+}
+.carousel-button{
+    position:absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 41px;
+    top:36%;
+    transform:translateY(-50%);
+    color:rgb(254, 248, 248);
+    cursor:pointer;
+    border-radius: .25rem;
+    padding:0 0.5rem;
+    background-color: rgba(0 0 0 );
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 3rem;
+  }
+
 html{
   width: 100%;
 }
+
 h1 {
   padding-left: 20px;
 }
@@ -38,17 +98,31 @@ header h1 {
 
 #about h1 {
   position: relative;
+  top: 12vh;
   top: 73vh;
+  font-family: Verdana;
+  border-bottom:2px solid coral;
+  margin-bottom:30px;
+  text-align: center;
 }
 
 #about p {
   position: relative;
-  top: 73vh;
+  top: 15vh;
   /* border: 2px solid; */
   width: 60%;
-  text-align: justify;
+  text-align: center;
   left: 22%;
   height: 20vh;
+  font-family: Arvo;
+}
+
+#about p:first-letter {
+  font-size: 100px;
+  display: block;
+  float: left;
+  line-height: 0.5;
+  margin: 15px 15px 10px 0;
 }
 @media (max-width:770px){
   #about p{height: 50%;}
@@ -62,6 +136,7 @@ header h1 {
 #skills {
   position: relative;
   top: 73vh;
+  text-align: center;
 }
 
 #skill_block {
@@ -415,6 +490,7 @@ header img {
   top: 85%;
   left: 90%;
 
+
   /* font-size: 6rem; */
   background: none;
   border: none;
@@ -685,7 +761,7 @@ header img {
  }
 .left{
   position: absolute;
-  top: -150px;
+  top: -178px;
   left: 20%;
   display: flex;
   flex-wrap: wrap;
@@ -703,6 +779,8 @@ header img {
 }
 .left-box{
   text-align: center;
+  position: relative;
+  left: -11%;
 }
 .img-profile{
   width: 5rem;
@@ -794,4 +872,9 @@ header img {
   padding: 5px;
   transform: scale(1.1);
   transition: 1s ;
+}
+.modal-body p {
+    color: #1e1eae;
+    font-size: 1.2rem;
+    font-weight: bold;
 }

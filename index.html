@@ -41,7 +41,7 @@
         trigger="loop"
         delay="1000"
         colors="primary:#000000"
-        style="width: 70px; height: 70px"
+        style="width: 54px; height: 54px"
       >
       </lord-icon>
     </button>
@@ -279,7 +279,6 @@
 
     <!-- Projects Section ends-->
 
-
     <!-- Contact Section starts -->
 
     <div class="container contact">
@@ -290,6 +289,29 @@
       <div class="row">
         <div class="column">
           <img src="https://cdn.dribbble.com/users/1484145/screenshots/14190807/contact_us_4x.png" style="width:100%">
+    
+    <!-- Footer Starts -->
+    <footer id="footer">
+      <div class="main-content">
+        <div class="left">
+          <div >
+            <img class="img-profile" src="assets/photo-1493612276216-ee3925520721.avif" alt="" srcset="">
+          </div>
+          <div class="left-box">
+            <h2>My Goal</h2>
+          </div>
+          <div class="content">
+            <p>
+               I aim to upskill myself in Frontend developement by learning Javascript and by gaining a wider knowledge towards it. After that I would focus on Backend Part by learning the most exciting and popular tech stack that is MERN stack and would love to gain knowlegde and make myself capable enough to become a full stack web developer.
+            </p>
+          </div>
+        </div>
+        <div class="socialhandles">
+          <h2>Social handles</h2>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-twitter"></i>
         </div>
         <div class="column">
           <form action="/action_page.php">
@@ -384,8 +406,43 @@
                   </ul>
                   <p>Copyright &copy; 2022 GDSC-DMCE
               </div>
+=======
+        <div class="right-box">
+          <h2 class="contact-us">Contact Me</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <input type="email" placeholder="Enter your Email" required />
+              </div>
+              <div class="msg">
+                <input type="email" placeholder="Enter your Message" required />
+              </div>
+              <div class="button">
+                <button type="button" class="btn" data-toggle="modal" data-target="#submitModal">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Modal for Submit Button-->
+      <div class="modal" id = "submitModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Success</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Thanks for contacting Us!! We will surely get back to you </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
       </div>
+
   </footer>
         
     <!-- Footer Ends -->

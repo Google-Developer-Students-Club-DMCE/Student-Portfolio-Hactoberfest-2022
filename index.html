@@ -41,7 +41,7 @@
         trigger="loop"
         delay="1000"
         colors="primary:#000000"
-        style="width: 70px; height: 70px"
+        style="width: 54px; height: 54px"
       >
       </lord-icon>
     </button>
@@ -280,46 +280,41 @@
     <!-- Projects Section ends-->
     
     <!-- Footer Starts -->
-     <footer id="footer">
+    <footer id="footer">
       <div class="main-content">
-        <div class="left-box">
-          <h2>About us</h2>
-        </div>
-        <div class="content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id
-            interdum mi. Fusce sollicitudin elementum risus, a consequat diam
-            rutrum vitae. Nunc porta nulla ut condimentum placerat. Donec et
-            tortor non enim fermentum consectetur.
-          </p>
+        <div class="left">
+          <div >
+            <img class="img-profile" src="assets/photo-1493612276216-ee3925520721.avif" alt="" srcset="">
+          </div>
+          <div class="left-box">
+            <h2>My Goal</h2>
+          </div>
+          <div class="content">
+            <p>
+               I aim to upskill myself in Frontend developement by learning Javascript and by gaining a wider knowledge towards it. After that I would focus on Backend Part by learning the most exciting and popular tech stack that is MERN stack and would love to gain knowlegde and make myself capable enough to become a full stack web developer.
+            </p>
+          </div>
         </div>
         <div class="socialhandles">
           <h2>Social handles</h2>
-          <a href="https://www.instagram.com/">
-            <img src="assets/instagram.png" alt="" class="res-logo-3"
-          /></a>
-          <a href="https://www.facebook.com/">
-            <img src="assets/facebook.png" alt="" class="res-logo-3"
-          /></a>
-          <a href="https://www.twitter.com/">
-            <img src="assets/twitter.png" alt="" class="res-logo-3"
-          /></a>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-twitter"></i>
         </div>
 
         <div class="right-box">
-          <h2>Contact Us</h2>
+          <h2 class="contact-us">Contact Me</h2>
           <div class="content">
             <form action="#">
               <div class="email">
-                <div class="text">*Email</div>
-                <input type="email" required />
+                <input type="email" placeholder="Enter your Email" required />
               </div>
               <div class="msg">
-                <div class="text">Message</div>
-                <textarea cols="25" rows="7"></textarea>
+                <input type="email" placeholder="Enter your Message" required />
               </div>
               <div class="button">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">Submit</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#submitModal">Submit</button>
               </div>
             </form>
           </div>
@@ -336,7 +331,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <p>Message Sent Successfully! </p>
+              <p>Thanks for contacting Us!! We will surely get back to you </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -345,7 +340,6 @@
         </div>
       </div>
     </footer>
-
         
     <!-- Footer Ends -->
     <script src="./script.js" defer></script>

@@ -7,8 +7,13 @@ body {
   background-image: url(./assets/header_img.jpg);
   background-repeat: no-repeat;
   background-size: 100% 72vh;
+
+
 }
 
+html{
+  width: 100%;
+}
 h1 {
   padding-left: 20px;
 }
@@ -37,6 +42,7 @@ header h1 {
   font-family: Verdana;
   border-bottom:2px solid coral;
   margin-bottom:30px;
+  text-align: center;
 }
 
 #about p {
@@ -44,7 +50,7 @@ header h1 {
   top: 73vh;
   /* border: 2px solid; */
   width: 60%;
-  text-align: justify;
+  text-align: center;
   left: 22%;
   height: 20vh;
   font-family: Arvo;
@@ -57,16 +63,26 @@ header h1 {
   line-height: 0.5;
   margin: 15px 15px 10px 0;
 }
+@media (max-width:770px){
+  #about p{height: 50%;}
+  #skill_block{gap: 0rem !important;}
+  #skills{height: 60rem; margin: 1rem !important;}
+  #skills p{text-align: center;}
+  .indicator{width: 100%;}
+ .education-section h2{margin: 2.5rem;}
+}
 
 #skills {
   position: relative;
   top: 73vh;
+  text-align: center;
 }
 
 #skill_block {
   display: flex;
   justify-content: center;
   gap: 200px;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -298,8 +314,8 @@ p {
 }
 
 footer {
-  background-color: blueviolet;
-  min-height: 300px;
+  /* background-color: blueviolet; */
+  min-height: 450px;
   width: auto;
   position: relative;
   display: flex;
@@ -408,8 +424,9 @@ header img {
 }
 
 .back-to-top--btn {
-  top: 80%;
-  left: 90%;
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
 
   /* font-size: 6rem; */
   background: none;
@@ -634,4 +651,164 @@ header img {
     left: 50px;
     right: inherit;
   }
+}
+
+.main-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 8rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+ @media (max-width:770px) {
+  .main-content{
+    flex-direction: column;
+  }
+  .left{
+    display: block;
+    padding: 2px;
+    font-size: 60%;
+  }
+  .right-box{
+    display: block;
+    width: 100%;
+    margin: 1rem;
+  }
+  .right-box input{
+    width: 80%;
+    margin: 0;
+  }
+
+  .socialhandles{
+    margin-top: 10rem;
+    width: 100% !important;
+    justify-content: space-between;
+    /* margin: 0; */
+    height: 10vh;
+    margin-left: -10rem;
+
+
+  }
+ }
+.left{
+  position: absolute;
+  top: -178px;
+  left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 12px;
+  background: rgb(34,193,195);
+  background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+  border-radius: 10px;
+}
+.left-box{
+  text-align: center;
+  position: relative;
+  left: -11%;
+}
+.img-profile{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  margin:0 4rem;
+}
+.contact-us{
+  transform:rotate(270deg);
+}
+.right-box{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+
+  /* margin-right: 200px; */
+}
+.socialhandles{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  width: 50%;
+}
+.socialhandles h2{
+  transform: rotate(270deg);
+}
+.right-box input{
+  /* background-color: #1e1eae; */
+  border: none;
+  margin: 1rem;
+  width: 300px;
+  padding: 1rem;
+  border-bottom: 2px solid white;
+  color: white;
+  background: transparent;
+}
+.right-box input::placeholder{
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.right-box button{
+  width: 100%;
+  background-color: white;
+}
+.right-box input:focus{
+  border: 2px solid white;
+}
+.socialhandles a{
+  font-size: 5rem;
+}
+.footer{
+  width: 100% !important;
+
+}
+.socialhandles i{
+  font-size: 30px;
+  /* margin: 0px 20px; */
+}
+.socialhandles i:hover{
+  background: white;
+  border-radius: 10px;
+}
+.fa-facebook:hover{
+  color: #1e1eae;
+  padding: 5px;
+  transform: scale(1.1);
+  transition: 1s ;
+}
+.fa-instagram:hover{
+  color: #fd79a8;
+  padding: 5px;
+  transform: scale(1.1);
+  transition: 1s ;
+}
+.fa-twitter:hover{
+  color: #74b9ff;
+  padding: 5px;
+  transform: scale(1.1);
+  transition: 1s ;
+}
+
+.fa-youtube:hover{
+  color: #d63031;
+  padding: 5px;
+  transform: scale(1.1);
+  transition: 1s ;
+}
+.modal-body p {
+    color: #1e1eae;
+    font-size: 1.2rem;
+    font-weight: bold;
 }

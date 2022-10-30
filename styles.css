@@ -50,6 +50,14 @@ header h1 {
   left: 22%;
   height: 20vh;
 }
+@media (max-width:770px){
+  #about p{height: 50%;}
+  #skill_block{gap: 0rem !important;}
+  #skills{height: 60rem; margin: 1rem !important;}
+  #skills p{text-align: center;}
+  .indicator{width: 100%;}
+ .education-section h2{margin: 2.5rem;}
+}
 
 #skills {
   position: relative;

@@ -411,8 +411,8 @@ header img {
 
 .back-to-top--btn {
   position: absolute;
-  top: 80px;
-  left: 90px;
+  top: 80%;
+  left: 70%;
 
   /* font-size: 6rem; */
   background: none;
